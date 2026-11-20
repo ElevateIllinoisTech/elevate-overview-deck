@@ -247,6 +247,11 @@ section#support .title { font-size: 58px !important; }
 .wc:last-child .wc-start { color: #cfc9c2; border-top-color: #3a3535; }
 section#who .title { font-size: 64px !important; }
 
+.eg-left { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.bstrip { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.bstrip img { width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(22,20,20,0.18)); }
+.bcap { flex-basis: 100%; font-size: 18px; color: var(--mute); margin: 0; }
+
 
 /* ---------- Player ---------- */
 html, body { margin: 0; height: 100%; background: #0E0D0D; overflow: hidden; }
@@ -418,13 +423,14 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 <h2 class="title">Badges students earned, and how.</h2>
 </div>
 <div class="earned">
+<div class="eg-left">
 <div class="eg-grid">
 <div class="eg rise" style="--i:1"><p class="eg-n">89 students</p><h3>Global Citizen</h3><p class="body">Completed an international experience or a cross-cultural project, such as Study Away.</p></div>
 <div class="eg rise" style="--i:2"><p class="eg-n">86 students</p><h3>Professional Relationship Builder</h3><p class="body">Built a professional network and kept up a mentorship relationship.</p></div>
 <div class="eg rise" style="--i:3"><p class="eg-n">30 students</p><h3>Job Search Portfolio Strategist</h3><p class="body">Finished a full set of career materials and ran a job search plan.</p></div>
-<div class="eg rise" style="--i:4"><p class="eg-n">15 students</p><h3>Advanced Industry Research Navigator</h3><p class="body">Completed industry research and networking events by Year Three.</p></div>
-<div class="eg rise" style="--i:5"><p class="eg-n">15 students</p><h3>Community Impact &amp; Engagement Leader</h3><p class="body">Led service work and built community partnerships.</p></div>
 <div class="eg rise" style="--i:6"><p class="eg-n">7 students</p><h3>Entrepreneurship Champion</h3><p class="body">Launched an approved business venture or social enterprise.</p></div>
+</div>
+<div class="bstrip rise" style="--i:5"><img src="assets/badges/future-ceo.png" alt="Future CEO badge"><img src="assets/badges/future-cto.png" alt="Future CTO badge"><img src="assets/badges/future-cfo.png" alt="Future CFO badge"><img src="assets/badges/aws-jam-champion.png" alt="AWS Jam Champion badge"><img src="assets/badges/globe-trotter.png" alt="Globe Trotter badge"><img src="assets/badges/pitch-perfect.png" alt="Pitch Perfect badge"><p class="bcap">A few of the badges students can earn on 312, including the new Stuart C-Suite series.</p></div>
 </div>
 <div class="stack rise" style="--i:7">
 <p class="tag-light">ONE STUDENT, MANY BADGES</p>
@@ -441,7 +447,7 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 </div>
 </div>
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
-<aside>Beyond the five foundational skill tracks, students earn milestone and specialized badges for what they actually do. Eighty-nine students hold Global Citizen, mostly through Study Away and cross-cultural projects. Eighty-six hold Professional Relationship Builder for building a network and keeping up a mentorship. Others earned badges for a complete job-search portfolio, industry research and networking by Year Three, leading community service, and launching a venture. And badges stack: badge holders carry about eight badges each on average. A typical path might start with First-Year Foundation Builder, add Global Citizen and Professional Relationship Builder in Year Two along with Sophomore Success Achiever, and reach Job Search Portfolio Strategist in Year Three. That path is illustrative, built from badges students really hold; no individual student is described. All counts are as of Fall 2026, from 312 data.</aside>
+<aside>The small images are real badge designs from the Elevate catalogue: the Stuart C-Suite series (Future CEO, CTO and CFO, launching in 2027), AWS Jam Champion, Globe Trotter and Pitch Perfect. Beyond the five foundational skill tracks, students earn milestone and specialized badges for what they actually do. Eighty-nine students hold Global Citizen, mostly through Study Away and cross-cultural projects. Eighty-six hold Professional Relationship Builder for building a network and keeping up a mentorship. Others earned badges for a complete job-search portfolio, industry research and networking by Year Three, leading community service, and launching a venture. And badges stack: badge holders carry about eight badges each on average. A typical path might start with First-Year Foundation Builder, add Global Citizen and Professional Relationship Builder in Year Two along with Sophomore Success Achiever, and reach Job Search Portfolio Strategist in Year Three. That path is illustrative, built from badges students really hold; no individual student is described. All counts are as of Fall 2026, from 312 data.</aside>
 </section>
 <section id="support" class="split" data-transition="fade">
 <img class="split-photo" src="assets/photo-support.jpg" alt="A group of students around a meeting table.">
