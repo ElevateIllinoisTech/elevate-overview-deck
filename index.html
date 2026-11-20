@@ -211,6 +211,13 @@ section.split { padding: 128px 888px 160px 128px; }
 .src-dark { font-size: 18px; color: var(--mute); margin: 0; }
 .who + .note, #who .note { font-size: 24px; }
 
+.grid5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.grid5 .pill { font-size: 23px; padding: 14px 18px; display: flex; align-items: center; min-height: 76px; box-sizing: border-box; }
+a.pill { text-decoration: none; }
+a.pill:hover { background: var(--paper); }
+.pill-go { background: var(--scarlet) !important; color: var(--paper) !important; border-left-color: var(--ink) !important; }
+.portal-link { color: var(--scarlet); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+
 
 /* ---------- Player ---------- */
 html, body { margin: 0; height: 100%; background: #0E0D0D; overflow: hidden; }
@@ -324,28 +331,32 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 <p class="eyebrow">THE ELEVATE PORTAL</p>
 <h2 class="title">Thousands of opportunities. One portal.</h2>
 </div>
-<p class="lead">elevate.iit.edu brings together 16 experience areas, the Elevate Electives Catalogue, an events calendar and career guides.</p>
-<div class="grid4">
-<p class="pill">Career pathway courses</p>
-<p class="pill">Virtual internships</p>
-<p class="pill">Job shadows</p>
-<p class="pill">Job simulations</p>
-<p class="pill">Featured jobs &amp; internships</p>
-<p class="pill">Leadership opportunities</p>
-<p class="pill">Professional development</p>
-<p class="pill">AWS certifications</p>
-<p class="pill">Other industry certifications</p>
-<p class="pill">Research opportunities</p>
-<p class="pill">Competitions &amp; external courses</p>
-<p class="pill">Incubators &amp; accelerators</p>
-<p class="pill">Quantum: Built in Chicago</p>
-<p class="pill">Healthcare &amp; Health Tech</p>
-<p class="pill">Study Away + global experiences</p>
-<p class="pill">Chicago Is Your Campus Too</p>
+<p class="lead"><a class="portal-link" href="https://elevate.iit.edu">elevate.iit.edu</a> brings together <b>19 primary experience areas</b> across multiple disciplines, the <a class="portal-link" href="https://elevate.iit.edu/channels/optional-elevate-experiences/">Elevate Electives &amp; Ideas Catalogue</a>, an <a class="portal-link" href="https://elevate.iit.edu/events/">events calendar</a> and career guides.</p>
+<div class="grid5">
+<a class="pill" href="https://elevate.iit.edu/channels/curriculum-based-pathways/">Career pathway courses</a>
+<a class="pill" href="https://elevate.iit.edu/channels/braven-partnership/">Braven Partnership</a>
+<a class="pill" href="https://careeraccelerator.iit.edu/">Global Career Accelerator</a>
+<a class="pill" href="https://elevate.iit.edu/channels/camp4/">Salesforce Foundations</a>
+<a class="pill" href="https://elevate.iit.edu/experiences/category/virtual-internships/">Virtual internships</a>
+<a class="pill" href="https://elevate.iit.edu/experiences/category/job-shadowing/">Job shadows</a>
+<a class="pill" href="https://elevate.iit.edu/experiences/category/job-simulations/">Job simulations</a>
+<a class="pill" href="https://elevate.iit.edu/jobs/">Featured jobs &amp; internships</a>
+<a class="pill" href="https://elevate.iit.edu/channels/leadership-opportunities/">Leadership opportunities</a>
+<a class="pill" href="https://elevate.iit.edu/experiences/category/professional-development">Professional development</a>
+<a class="pill" href="https://elevate.iit.edu/channels/aws-cloud-certifications/">AWS certifications</a>
+<a class="pill" href="https://elevate.iit.edu/channels/free-industry-certifications/">Other industry certifications</a>
+<a class="pill" href="https://elevate.iit.edu/experiences/category/elevate-research/">Research opportunities</a>
+<a class="pill" href="https://elevate.iit.edu/experiences/category/competitions-outside-courses/">Competitions &amp; external courses</a>
+<a class="pill" href="https://elevate.iit.edu/experiences/category/incubators-accelerators-startup-studios/">Incubators &amp; accelerators</a>
+<a class="pill" href="https://elevate.iit.edu/channels/quantum-built-in-chicago/">Quantum: Built in Chicago</a>
+<a class="pill" href="https://elevate.iit.edu/pre-med-pre-health-roadmap/">Healthcare &amp; Health Tech</a>
+<a class="pill" href="https://elevate.iit.edu/experiences/category/study-abroad/">Study Away + global experiences</a>
+<a class="pill" href="https://elevate.iit.edu/channels/on-campus/">Chicago Is Your Campus Too</a>
+<a class="pill pill-go" href="https://elevate.iit.edu">Explore the portal →</a>
 </div>
 <p class="note">Thousands of combinations for career readiness and development, backed by reputable sources and vetted by Career Services &amp; Experiential Learning.</p>
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
-<aside>This is the Elevate portal at elevate.iit.edu. It holds thousands of opportunities across 16 experience areas, from career pathway courses such as Braven, the Global Career Accelerator, the Salesforce Foundations course and virtual internships, to AWS and other industry certifications, research, competitions, incubators, Quantum: Built in Chicago, Healthcare and Health Tech, Study Away and Chicago Is Your Campus Too. Add the Elevate Electives Catalogue, the events calendar and the career resource guides, and students have thousands of possible combinations for building career readiness. Every resource is drawn from reputable sources and vetted by Career Services and Experiential Learning. Students don’t do all of it; they pick what fits their goals, with a coach to help them choose.</aside>
+<aside>This is the Elevate portal at elevate.iit.edu. It brings together 19 primary experience areas across multiple disciplines: career pathway courses, the Braven partnership, the Global Career Accelerator and the Salesforce Foundations course; virtual internships, job shadows, job simulations and featured jobs and internships; leadership and professional development; AWS and other industry certifications; research, competitions and external courses, and incubators and accelerators; Quantum: Built in Chicago, Healthcare and Health Tech, Study Away and global experiences, and Chicago Is Your Campus Too. Add the Elevate Electives and Ideas Catalogue, the events calendar and the career guides, and students have thousands of possible combinations for building career readiness. Every resource is drawn from reputable sources and vetted by Career Services and Experiential Learning. Students don’t do all of it; they pick what fits their goals, with an Elevate Success Coach to help them choose. Every tile on this slide links to its page on the portal.</aside>
 </section>
 <section id="badges" class="accent" data-transition="fade">
 <div class="head">
@@ -462,7 +473,7 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 </div>
 <p class="network rise" style="--i:3"><b>The ultimate professional network.</b> Build and cultivate relationships with coaches, mentors, alumni, peers and employers who know your work.</p>
 <div class="foot"><img src="assets/lockup-rev.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
-<aside>Here’s the payoff. On the left, the application materials every job search needs, reviewed and optimized with Career Services along the way. On the right, the evidence that sets an Elevate student apart: badges, free certifications like AWS, real experience, and a network. The goal is simple: from enrollment through employment. Just as important is the network: students build and cultivate relationships with coaches, mentors, alumni, peers and employers who have seen their work.</aside>
+<aside>Here’s the payoff. On the left, the application materials every job search needs, reviewed and optimized with Career Services along the way. On the right, the evidence that sets an Elevate student apart: workforce training on top of the degree, free certifications like AWS, real experience, and badges on a co-curricular transcript. The goal is simple: from enrollment through employment. Just as important is the network: students build and cultivate relationships with coaches, mentors, alumni, peers and employers who have seen their work.</aside>
 </section>
 <section id="start" data-transition="fade">
 <div class="head">
