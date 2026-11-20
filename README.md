@@ -20,3 +20,6 @@ A 10-slide, Illinois Tech–branded overview of Elevate, Illinois Tech's career-
 
 ## Wording rules
 Elevate is a **pathway**, never a "program". Always "Elevate Success Coach".
+
+## Photo credits
+Networking photos are from Fred Logan's licensed stock image set (Networking-Images): Jopwell, WOCinTech Chat, Product School and Kholina. S. R. Crown Hall photo by Masania.

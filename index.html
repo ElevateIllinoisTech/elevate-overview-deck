@@ -107,11 +107,11 @@ h1, h2, h3 { font-family: 'Jost', 'Futura', 'Trebuchet MS', Arial, sans-serif; m
 .arrow { width: 44px; height: 24px; }
 
 /* Experiences grid */
-.tight { gap: 32px; }
+.tight { gap: 28px; }
 .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .grid3 .pill { font-size: 32px; padding: 28px 28px; }
-.pill { font-size: 28px; font-weight: 600; line-height: 1.3; color: var(--ink); background: var(--card); border-left: 6px solid var(--scarlet); padding: 18px 24px; margin: 0; }
+.pill { font-size: 26px; font-weight: 600; line-height: 1.3; color: var(--ink); background: var(--card); border-left: 6px solid var(--scarlet); padding: 14px 22px; margin: 0; }
 
 /* Badges statement */
 .stat { flex: 1; display: flex; align-items: center; gap: 72px; }
@@ -156,6 +156,34 @@ h1, h2, h3 { font-family: 'Jost', 'Futura', 'Trebuchet MS', Arial, sans-serif; m
 .promise-fine { font-size: 24px; line-height: 1.4; margin: 0; color: #FBEDED; }
 .tc-link { font-size: 32px; font-weight: 700; margin: 0; }
 .tc-link a, .start-left a { color: var(--scarlet); text-decoration: underline; }
+
+/* Split slides: photo panel on the right */
+section.split { padding: 128px 888px 160px 128px; }
+.split-photo { position: absolute; right: 0; top: 0; width: 760px; height: 1080px; object-fit: cover; }
+.split-bar { position: absolute; left: 1148px; top: 0; width: 12px; height: 1080px; background: var(--scarlet); }
+.split .foot { width: 904px; }
+.split .title { font-size: 60px; }
+.split .lead { font-size: 30px; }
+.trio { display: flex; gap: 16px; }
+.trio-item { flex: 1; font-size: 26px; line-height: 1.3; margin: 0; padding: 18px 20px; background: var(--card); border-top: 6px solid var(--scarlet); color: var(--ink); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.split .pill { font-size: 26px; padding: 14px 20px; }
+.sup { gap: 20px; }
+.sup .card { padding: 28px 28px; gap: 10px; }
+.sup .card h3 { font-size: 34px; }
+.sup .card .body { font-size: 26px; }
+.stat-inline { display: flex; align-items: center; gap: 24px; }
+.stat-big { font-family: 'Jost', 'Futura', 'Trebuchet MS', Arial, sans-serif; font-size: 96px; font-weight: 700; line-height: 1; color: var(--scarlet); margin: 0; }
+.stat-label { font-size: 28px; line-height: 1.35; color: var(--ink); margin: 0; max-width: 520px; }
+.split .cols { gap: 40px; }
+.split .col h3 { font-size: 34px; }
+.split .col ul { font-size: 26px; padding-left: 30px; }
+/* Badge tiles on the scarlet slide */
+.tiles { display: flex; gap: 24px; }
+.tile { flex: 1; border-top: 3px solid var(--paper); padding-top: 16px; display: flex; flex-direction: column; gap: 4px; }
+.tile-num { font-family: 'Jost', 'Futura', 'Trebuchet MS', Arial, sans-serif; font-size: 72px; font-weight: 700; line-height: 1; color: var(--paper); margin: 0; }
+.tile-label { font-size: 26px; color: var(--paper); margin: 0; }
+.src { font-size: 24px; color: #FBEDED; margin: 0; }
 
 
 /* ---------- Player ---------- */
@@ -202,37 +230,37 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 </div>
 <aside>Welcome. In the next few minutes you’ll see what Elevate is, who it’s for, and how a student can use it from their first semester to their first job. The short version: Elevate is a pathway, not a class. Students opt in, try real career experiences, and earn badges that prove what they can do.</aside>
 </section>
-<section id="what" data-transition="fade">
+<section id="what" class="split" data-transition="fade">
+<img class="split-photo" src="assets/photo-what.jpg" alt="Students and young professionals talking at a networking event.">
+<div class="split-bar"></div>
 <div class="head">
 <p class="eyebrow">WHAT IS ELEVATE?</p>
-<h2 class="title">A pathway that turns your college years into career readiness.</h2>
+<h2 class="title">Elevate is Illinois Tech’s career-readiness pathway, from enrollment through employment.</h2>
 </div>
-<p class="lead">Elevate is opt-in and built to grow with you. You try real career experiences, build skills along the way, and earn credentials that show employers what you can do.</p>
-<div class="row">
-<div class="card rise" style="--i:1"><p class="tag">EXPLORE</p><h3>Try careers early</h3><p class="body">Job shadows, simulations and virtual internships let you test a field before you commit.</p></div>
-<div class="card rise" style="--i:2"><p class="tag">BUILD</p><h3>Grow year by year</h3><p class="body">Skills, certifications and hands-on experience stack up each year you take part.</p></div>
-<div class="card rise" style="--i:3"><p class="tag">PROVE</p><h3>Show the proof</h3><p class="body">Badges and a co-curricular transcript give employers evidence, not just claims.</p></div>
-</div>
+<p class="lead">It’s opt-in and built to scale. It connects what you learn in class with real experiences outside it, and records your growth as badges on a portable co-curricular transcript.</p>
+<div class="trio rise" style="--i:1"><p class="trio-item"><b>Explore</b> careers early</p><p class="trio-item"><b>Build</b> skills every year</p><p class="trio-item"><b>Prove</b> it with badges</p></div>
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
-<aside>Think of Elevate as a guided path that runs alongside your degree. Your classes teach the subject; Elevate helps you turn that learning into a career. Three ideas: explore careers early, build skills every year, and prove what you can do with badges employers can see.</aside>
+<aside>Definition: Elevate is Illinois Tech’s opt-in, scalable career-readiness pathway. It brings curricular and co-curricular learning together for undergraduates and the wider Illinois Tech professional community, and maps the journey from enrollment through employment. Think of Elevate as a guided path that runs alongside your degree. Your classes teach the subject; Elevate helps you turn that learning into a career. Three ideas: explore careers early, build skills every year, and prove what you can do with badges employers can see.</aside>
 </section>
-<section id="already" class="stone" data-transition="fade">
+<section id="already" class="split stone" data-transition="fade">
+<img class="split-photo" src="assets/photo-already.jpg" alt="A crowd of people talking at a professional networking event.">
+<div class="split-bar"></div>
 <div class="head">
 <p class="eyebrow">YOU’RE ALREADY DOING IT</p>
 <h2 class="title">Elevate counts what you already do.</h2>
 </div>
-<p class="lead">Most students are already building career skills outside class. Elevate gives that work a structure, a coach, and credit employers can see.</p>
-<div class="grid3">
-<p class="pill rise" style="--i:1">Going to a career fair</p>
-<p class="pill rise" style="--i:2">Attending an employer info session</p>
-<p class="pill rise" style="--i:3">Joining or leading a student org</p>
-<p class="pill rise" style="--i:4">Working on research or a project team</p>
-<p class="pill rise" style="--i:5">Entering a competition or hackathon</p>
-<p class="pill rise" style="--i:6">Landing an internship</p>
+<div class="stat-inline rise" style="--i:1"><p class="stat-big">1,169</p><p class="stat-label">students have already taken part in at least one Elevate activity</p></div>
+<div class="grid2">
+<p class="pill">Going to a career fair</p>
+<p class="pill">Attending an employer info session</p>
+<p class="pill">Joining or leading a student org</p>
+<p class="pill">Working on research or a project team</p>
+<p class="pill">Entering a competition or hackathon</p>
+<p class="pill">Landing an internship</p>
 </div>
 <p class="note">Do it, reflect on it, earn the badge.</p>
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
-<aside>A key message for students: Elevate isn’t a pile of extra work. Much of what counts is what they’re already doing: career fairs, info sessions, student orgs, research, competitions and internships. Elevate connects those pieces, pairs them with a coach, and turns them into badges. A badge is earned by completing the activity and writing a short reflection on what was learned.</aside>
+<aside>A key message for students: Elevate isn’t a pile of extra work. Much of what counts is what they’re already doing: career fairs, info sessions, student orgs, research, competitions and internships. Elevate connects those pieces, pairs them with a coach, and turns them into badges. A badge is earned by completing the activity and writing a short reflection on what was learned. As of the November 12, 2026 312 data, 1,169 students had taken part in at least one Elevate activity.</aside>
 </section>
 <section id="who" data-transition="fade">
 <div class="head">
@@ -245,7 +273,7 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 <div class="card rise" style="--i:3"><p class="tag">COMMUTERS</p><h3>Working &amp; family life</h3><p class="body">Designed for students who commute, work or care for family, with virtual and flexible options.</p></div>
 <div class="card rise" style="--i:4"><p class="tag">GRADUATE</p><h3>Self-directed path</h3><p class="body">Use Elevate resources and experiences with coach support, without the Elevate promise.</p></div>
 </div>
-<p class="note">Eligible undergraduates who sign the Terms and Conditions get a personalized, structured plan and the Elevate promise.</p>
+<p class="note"><b>1,940</b> undergraduates are eligible today. Signing on adds a personalized plan and the Elevate promise.</p>
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
 <aside>Elevate meets students where they are. First-year undergraduates and new transfer students in any year can opt in; students already in Elevate continue year by year. For transfers, Elevate doesn’t review past academic credits; it looks at past professional development and career readiness. Elevate was redesigned after the pilot showed that nearly all second-year students commuted, so it works for commuters, working students and students with family commitments, including virtual options. Graduate and PhD students can use Elevate resources and experiences on a self-directed path with support; the incentive (the Elevate promise) and the structured curriculum are for eligible undergraduates who sign the Terms and Conditions.</aside>
 </section>
@@ -284,30 +312,31 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 </section>
 <section id="experiences" class="stone tight" data-transition="fade">
 <div class="head">
-<p class="eyebrow">WHAT YOU CAN DO</p>
-<h2 class="title">Experiences for every interest.</h2>
+<p class="eyebrow">THE ELEVATE PORTAL</p>
+<h2 class="title">Thousands of opportunities. One portal.</h2>
 </div>
-<p class="lead">Grouped into Tech, Design and Professional Futures, so it’s easy to find your fit.</p>
+<p class="lead">elevate.iit.edu brings together 16 experience areas, the Elevate Electives Catalogue, an events calendar and career guides.</p>
 <div class="grid4">
+<p class="pill">Career pathway courses</p>
+<p class="pill">Virtual internships</p>
 <p class="pill">Job shadows</p>
 <p class="pill">Job simulations</p>
-<p class="pill">Virtual internships</p>
 <p class="pill">Featured jobs &amp; internships</p>
 <p class="pill">Leadership opportunities</p>
 <p class="pill">Professional development</p>
-<p class="pill">AWS &amp; industry certifications</p>
-<p class="pill">Quantum: Built in Chicago</p>
+<p class="pill">AWS certifications</p>
+<p class="pill">Other industry certifications</p>
 <p class="pill">Research opportunities</p>
-<p class="pill">Competitions</p>
+<p class="pill">Competitions &amp; external courses</p>
 <p class="pill">Incubators &amp; accelerators</p>
-<p class="pill">Study Away &amp; global experiences</p>
+<p class="pill">Quantum: Built in Chicago</p>
 <p class="pill">Healthcare &amp; Health Tech</p>
+<p class="pill">Study Away + global experiences</p>
 <p class="pill">Chicago Is Your Campus Too</p>
-<p class="pill">Elevate Electives</p>
-<p class="pill">Career pathway courses</p>
 </div>
+<p class="note">Thousands of combinations for career readiness and development, backed by reputable sources and vetted by Career Services &amp; Experiential Learning.</p>
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
-<aside>This is the menu. Students don’t do all of it; they pick what fits their goals. Someone curious about tech might try a job simulation and an AWS certification. A future founder might join an incubator. Someone exploring might start with a job shadow or a Chicago Is Your Campus Too outing. There’s also an events calendar that ties it all together.</aside>
+<aside>This is the Elevate portal at elevate.iit.edu. It holds thousands of opportunities across 16 experience areas, from career pathway courses such as Braven, the Global Career Accelerator, the Salesforce Foundations course and virtual internships, to AWS and other industry certifications, research, competitions, incubators, Quantum: Built in Chicago, Healthcare and Health Tech, Study Away and Chicago Is Your Campus Too. Add the Elevate Electives Catalogue, the events calendar and the career resource guides, and students have thousands of possible combinations for building career readiness. Every resource is drawn from reputable sources and vetted by Career Services and Experiential Learning. Students don’t do all of it; they pick what fits their goals, with a coach to help them choose.</aside>
 </section>
 <section id="badges" class="accent" data-transition="fade">
 <div class="head">
@@ -321,19 +350,27 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 <div class="chips"><p class="chip">NACE</p><p class="chip">WEF</p><p class="chip">CASEL</p><p class="chip">P21</p></div>
 </div>
 </div>
+<div class="tiles">
+<div class="tile rise" style="--i:2"><p class="tile-num">1,900+</p><p class="tile-label">badges awarded</p></div>
+<div class="tile rise" style="--i:3"><p class="tile-num">229</p><p class="tile-label">students holding badges</p></div>
+<div class="tile rise" style="--i:4"><p class="tile-num">498</p><p class="tile-label">students signed on</p></div>
+</div>
+<p class="src">312 data as of November 12, 2026.</p>
 <div class="foot"><img src="assets/lockup-rev.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
-<aside>This is what makes Elevate different. When students take part, they earn badges on 312, Illinois Tech’s event and engagement platform. Those badges build a co-curricular transcript they can share. Each badge is mapped to recognized competency frameworks: NACE career readiness, the World Economic Forum’s future skills, CASEL social-emotional skills, and P21 21st-century skills. In plain terms: it’s a record employers understand.</aside>
+<aside>This is what makes Elevate different. When students take part, they earn badges on 312, Illinois Tech’s event and engagement platform. Those badges build a co-curricular transcript they can share. Each badge is mapped to recognized competency frameworks: NACE career readiness, the World Economic Forum’s future skills, CASEL social-emotional skills, and P21 21st-century skills. In plain terms: it’s a record employers understand. As of the November 12, 2026 data pull, more than 1,900 badges had been awarded to 229 students, and 498 students had signed the Terms and Conditions.</aside>
 </section>
-<section id="support" data-transition="fade">
+<section id="support" class="split" data-transition="fade">
+<img class="split-photo" src="assets/photo-support.jpg" alt="A group of students around a meeting table.">
+<div class="split-bar"></div>
 <div class="head">
 <p class="eyebrow">YOU’RE NEVER ON YOUR OWN</p>
 <h2 class="title">Real people, and a smart tool, in your corner.</h2>
 </div>
-<div class="row">
-<div class="card rise" style="--i:1"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><h3>Elevate Success Coach</h3><p class="body">Your guide through the pathway, with a check-in at least once a year.</p></div>
-<div class="card rise" style="--i:2"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><h3>Peer Career Coaches</h3><p class="body">Walk in, no appointment: MTCC 106, Monday–Friday, 10 a.m.–4 p.m.</p></div>
-<div class="card rise" style="--i:3"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><h3>Career coaches</h3><p class="body">Book a one-on-one appointment through Handshake.</p></div>
-<div class="card rise" style="--i:4"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg><h3>AI Career Coach</h3><p class="body">Get help anytime, day or night, on elevate.iit.edu.</p></div>
+<div class="grid2 sup">
+<div class="card rise" style="--i:1"><h3>Elevate Success Coach</h3><p class="body">Your guide through the pathway, with a check-in at least once a year.</p></div>
+<div class="card rise" style="--i:2"><h3>Peer Career Coaches</h3><p class="body">Walk in: MTCC 106, Monday–Friday, 10 a.m.–4 p.m.</p></div>
+<div class="card rise" style="--i:3"><h3>Career coaches</h3><p class="body">Book a one-on-one appointment through Handshake.</p></div>
+<div class="card rise" style="--i:4"><h3>AI Career Coach</h3><p class="body">Get help anytime, day or night, on elevate.iit.edu.</p></div>
 </div>
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
 <aside>Support comes in layers. Every Elevate student has an Elevate Success Coach. For quick questions, Peer Career Coaches take walk-ins in MTCC 106, weekdays 10 to 4. For deeper conversations, students book a career coach on Handshake. And when it’s 11 p.m. and the resume is due tomorrow, the AI Career Coach on elevate.iit.edu is always on.</aside>
@@ -365,7 +402,9 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
 <aside>This is the agreement students sign. Their side: sign in Year One and meet an Elevate Success Coach right away; complete Elevate Orientation and a financial literacy workshop; keep a 3.0 GPA and good academic and financial standing; meet each year’s requirements, with two electives a year from Year Two; complete a co-op and internship prep course such as Braven BRVN 200; and graduate within eight to ten semesters. The full terms also ask that students be legally eligible to work in the U.S. at graduation and be willing to relocate if a job requires it. Illinois Tech’s side: students who finish every requirement and don’t have a job or graduate school offer within six months of graduating may be eligible for up to nine credit hours of select graduate courses tuition-free, or one term of free upskilling or a digital apprenticeship, within a year of graduation and subject to additional factors set by Illinois Tech. The benefit can’t be applied toward a graduate degree program. Point students to the link to read every section before they sign.</aside>
 </section>
-<section id="gain" class="dark" data-transition="fade">
+<section id="gain" class="split dark" data-transition="fade">
+<img class="split-photo" src="assets/photo-gain.jpg" alt="Young professionals talking and laughing at a networking event.">
+<div class="split-bar"></div>
 <div class="head">
 <p class="eyebrow">WHAT YOU WALK AWAY WITH</p>
 <h2 class="title">Ready for the job market before graduation day.</h2>
@@ -373,22 +412,11 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 <div class="cols">
 <div class="col rise" style="--i:1">
 <h3>Materials that stand out</h3>
-<ul>
-<li>A polished resume</li>
-<li>A strong LinkedIn profile</li>
-<li>A complete Handshake profile</li>
-<li>A cover letter you can adapt</li>
-<li>A portfolio of your work</li>
-</ul>
+<ul><li>A polished resume</li><li>A strong LinkedIn profile</li><li>A complete Handshake profile</li><li>A cover letter you can adapt</li><li>A portfolio of your work</li></ul>
 </div>
 <div class="col rise" style="--i:2">
 <h3>Proof employers trust</h3>
-<ul>
-<li>Badges on a co-curricular transcript</li>
-<li>Free industry certifications, including AWS</li>
-<li>Real experience from shadows to internships</li>
-<li>A network of coaches, peers and employers</li>
-</ul>
+<ul><li>Badges on a co-curricular transcript</li><li>Free industry certifications, including AWS</li><li>Real experience, from shadows to internships</li><li>A network of coaches, peers and employers</li></ul>
 </div>
 </div>
 <div class="foot"><img src="assets/lockup-rev.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
