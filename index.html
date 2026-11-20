@@ -236,6 +236,17 @@ section#support .title { font-size: 58px !important; }
 .has-bg > .bg-wash { position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, rgba(247,245,242,0.85) 0%, rgba(247,245,242,0.55) 45%, rgba(247,245,242,0.8) 100%); }
 .has-bg .yr { box-shadow: 0 6px 20px rgba(22,20,20,0.10); }
 
+.who5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.wc { background: var(--card); border-top: 8px solid var(--scarlet); padding: 26px 24px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 6px 18px rgba(22,20,20,0.06); }
+.wc .tag { font-size: 16px; font-weight: 700; letter-spacing: 2px; color: var(--scarlet); margin: 0; }
+.wc h3 { font-size: 32px; line-height: 1.1; color: var(--ink); margin: 0; }
+.wc-line { font-size: 27px; line-height: 1.3; font-weight: 600; color: var(--ink); margin: 6px 0 0; flex: 1; }
+.wc-start { font-size: 20px; line-height: 1.35; color: var(--mute); margin: 0; border-top: 1px solid var(--stone); padding-top: 12px; }
+.wc:last-child { background: var(--ink); }
+.wc:last-child h3, .wc:last-child .wc-line { color: var(--paper); }
+.wc:last-child .wc-start { color: #cfc9c2; border-top-color: #3a3535; }
+section#who .title { font-size: 64px !important; }
+
 
 /* ---------- Player ---------- */
 html, body { margin: 0; height: 100%; background: #0E0D0D; overflow: hidden; }
@@ -316,17 +327,18 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 <section id="who" data-transition="fade">
 <div class="head">
 <p class="eyebrow">WHO IT’S FOR</p>
-<h2 class="title">What Elevate means for you.</h2>
+<h2 class="title">Wherever you start, Elevate meets you there.</h2>
 </div>
-<div class="row who">
-<div class="card rise" style="--i:1"><p class="tag">UNDERGRADS WHO OPT IN</p><h3>Elevate participants</h3><p class="lbl">YOU GET</p><p class="body">A yearly plan, an Elevate Success Coach, badges and the Elevate Commitment.</p><p class="lbl">START HERE</p><p class="body">Finish orientation on Canvas, then book your coach on 312.</p></div>
-<div class="card rise" style="--i:2"><p class="tag">NEW TO ILLINOIS TECH</p><h3>Transfer students</h3><p class="lbl">YOU GET</p><p class="body">Your past career prep counts, so you don’t start over. 50+ joined this fall.</p><p class="lbl">START HERE</p><p class="body">Join the Transfer Students channel.</p></div>
-<div class="card rise" style="--i:3"><p class="tag">SELF-DIRECTED PATH</p><h3>Not yet in Elevate</h3><p class="lbl">YOU GET</p><p class="body">Every workshop, event and coach, plus the AI Career Coach.</p><p class="lbl">START HERE</p><p class="body">An info session, the Elevate table at The Bridge, or the portal.</p></div>
-<div class="card rise" style="--i:4"><p class="tag">MASTER’S AND PHD</p><h3>Graduate students</h3><p class="lbl">YOU GET</p><p class="body">Coaching, employer events, and free AWS and quantum training.</p><p class="lbl">START HERE</p><p class="body">Book a coach on Handshake.</p></div>
+<div class="who5">
+<div class="wc rise" style="--i:1"><p class="tag">FIRST-YEAR &amp; CONTINUING</p><h3>Elevate participants</h3><p class="wc-line">Your plan, your coach, your proof, year after year.</p><p class="wc-start"><b>Start:</b> Finish orientation on Canvas, then book your Elevate Success Coach on 312.</p></div>
+<div class="wc rise" style="--i:2"><p class="tag">NEW TO ILLINOIS TECH</p><h3>Transfer students</h3><p class="wc-line">Your past counts. You don’t start over.</p><p class="wc-start"><b>Start:</b> Join the Transfer Students channel and ask about the cohort.</p></div>
+<div class="wc rise" style="--i:3"><p class="tag">STILL DECIDING</p><h3>Not yet in Elevate</h3><p class="wc-line">Every workshop, event and coach is already open to you.</p><p class="wc-start"><b>Start:</b> Visit an info session or the Elevate table at The Bridge.</p></div>
+<div class="wc rise" style="--i:4"><p class="tag">MASTER’S &amp; PHD</p><h3>Graduate students</h3><p class="wc-line">Coaching, employers, and free AWS and quantum training.</p><p class="wc-start"><b>Start:</b> Book a career coach on Handshake.</p></div>
+<div class="wc rise" style="--i:5"><p class="tag">ONCE A SCARLET HAWK</p><h3>Alumni</h3><p class="wc-line">Support through your first job, then the chance to lift the next Hawk.</p><p class="wc-start"><b>Start:</b> Stay connected and mentor current students.</p></div>
 </div>
-<p class="note"><b>Commuting or working?</b> Every path has flexible, virtual options. <b>1,940</b> undergrads can opt in today.</p>
+<p class="note"><b>Commuting, working or caring for family?</b> Every path has flexible, virtual options. <b>1,940</b> undergrads can opt in today.</p>
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
-<aside>Elevate means something a little different depending on who you are. Undergraduates who opt in get the full pathway: a year-by-year curriculum, an Elevate Success Coach, badges on a co-curricular transcript, and the Elevate Commitment when they finish every requirement. New transfer students join the Elevate Transfer Cohort, which counts the professional development they’ve already done; more than 50 joined this fall. Undergraduates who haven’t opted in can still use every workshop, event, career community, the AI Career Coach and career coaching, and can opt in whenever they’re ready. Graduate and PhD students take part on a self-directed path: career coaching, employer events, free AWS and quantum training, and the Plus One channel; the Elevate Commitment and the structured curriculum are for undergraduates who sign the Terms and Conditions. Elevate was redesigned after the pilot showed that nearly all second-year students commuted, so every path includes virtual and flexible options for commuters, working students and students with family commitments.</aside>
+<aside>Elevate isn’t one-size-fits-all; it meets every Scarlet Hawk where they are. Undergraduates who opt in get a year-by-year plan, an Elevate Success Coach, badges on a co-curricular transcript, and the Elevate Commitment when they finish every requirement. Transfer students join the Elevate Transfer Cohort, which counts the professional development they’ve already done; more than 50 joined this fall. Students still deciding can use every workshop, event, career community, career coaching and the AI Career Coach, and opt in whenever they’re ready. Graduate and PhD students get coaching, employer events and free AWS and quantum training on a self-directed path. And it doesn’t end at graduation: alumni keep support through their first job after Illinois Tech, then help lift the next generation by mentoring current students. Every path includes flexible, virtual options for commuters, working students and students with family commitments.</aside>
 </section>
 <section id="years" class="has-bg" data-transition="fade">
 <img class="bg-photo" src="assets/photo-grad.jpg" alt="">
