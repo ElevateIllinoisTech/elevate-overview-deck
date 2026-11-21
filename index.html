@@ -267,6 +267,10 @@ section#gain .col { gap: 16px; padding-top: 24px; }
 section#gain .col ul { font-size: 25px; line-height: 1.42; }
 section#gain .network { font-size: 28px; line-height: 1.35; }
 section#gain .network b { display: block; font-size: 31px; line-height: 1.2; margin-bottom: 6px; }
+.qr-link { display: block; line-height: 0; cursor: pointer; transition: transform 200ms ease; }
+.qr-link:hover { transform: scale(1.02); }
+.url a { color: var(--scarlet); text-decoration: none; }
+.url a:hover { text-decoration: underline; text-underline-offset: 8px; }
 
 
 /* ---------- Player ---------- */
@@ -548,13 +552,13 @@ body.editing .deck [contenteditable="true"] { outline: 2px dashed rgba(204,0,0,.
 <li>Build experiences and your professional network</li>
 <li>Command the job market</li>
 </ol>
-<p class="url">elevate.iit.edu</p>
+<p class="url"><a href="https://elevate.iit.edu/" target="_blank" rel="noopener noreferrer">elevate.iit.edu</a></p>
 <p class="email">elevate@illinoistech.edu</p>
 </div>
-<img class="qr" src="assets/qr.png" alt="QR code linking to elevate.iit.edu, labeled Scan to enter the Elevate Universe.">
+<a class="qr-link" href="https://elevate.iit.edu/" target="_blank" rel="noopener noreferrer" aria-label="Open elevate.iit.edu"><img class="qr" src="assets/qr.png" alt="QR code linking to elevate.iit.edu, labeled Scan to enter the Elevate Universe."></a>
 </div>
 <div class="foot"><img src="assets/lockup-dark.png" alt="Illinois Tech Elevate"><div class="pg"></div></div>
-<aside>Getting started: visit and read elevate.iit.edu, then sign in to 312 to see your assigned checklist and begin. Read and sign the Terms and Conditions, meet your Elevate Success Coach, pick a first experience and earn a first badge. From there, students keep building experiences and a professional network, year by year, until they can command the job market. Questions? Email elevate@illinoistech.edu. Point phones at the QR code to go straight to the Elevate site.</aside>
+<aside>Getting started: visit and read elevate.iit.edu, then sign in to 312 to see your assigned checklist and begin. Read and sign the Terms and Conditions, meet your Elevate Success Coach, pick a first experience and earn a first badge. From there, students keep building experiences and a professional network, year by year, until they can command the job market. Questions? Email elevate@illinoistech.edu. Point phones at the QR code to go straight to the Elevate site; on screen, the QR code and the web address are both clickable.</aside>
 </section>
 </div></div></div>
 
